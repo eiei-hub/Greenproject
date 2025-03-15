@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>碳中和计算器</title>
+    <!-- 依赖包 -->
+    <link href="https://cdn.bootcdn.net/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="../css/main.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- 导航栏（与首页一致） -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand text-white" href="#"><i class="fa-solid fa-leaf"></i> 碳中和之家</a>
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html">首页</a></li>
+                <li class="nav-item"><a class="nav-link" href="calculator.html">计算器</a></li>
+                <li class="nav-item"><a class="nav-link" href="cases.html">案例</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- 计算器主体 -->
+    <section class="container my-5">
+        <div class="row">
+            <div class="col-md-6">
+                <h3 class="mb-4"><i class="fas fa-calculator"></i> 碳足迹计算</h3>
+                <form id="carbonForm">
+                    <div class="mb-3">
+                        <label class="form-label">每月用电量 (kWh)</label>
+                        <input type="number" class="form-control" id="electricity" required>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">每月燃气使用量 (m³)</label>
+                        <input type="number" class="form-control" id="gas" required>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">每月交通里程 (km)</label>
+                        <input type="number" class="form-control" id="travel" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary">计算</button>
+                </form>
+            </div>
+            <div class="col-md-6">
+                <div id="result" class="p-4 bg-light rounded"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container text-center">
+            <p>&copy; 2023 碳中和之家</p>
+        </div>
+    </footer>
+
+    <!-- 脚本 -->
+    <script src="https://cdn.bootcdn.net/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/calculator.js"></script>
+</body>
+
+</html>

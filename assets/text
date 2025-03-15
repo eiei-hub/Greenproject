@@ -1,0 +1,19 @@
+大致结构
+project-root/
+├── css/
+│   ├── main.css            # 全局样式
+├── js/
+│   ├── calculator.js       # 碳中和计算器逻辑
+│   ├── chart-config.js     # Chart.js 图表配置（可选）
+├── assets/
+│   ├── images/             # 图片资源
+│   │   ├── banner.jpg      # 首页横幅图片
+│   │   ├── case1.jpg       # 成功案例1图片
+│   │   ├── case2.jpg       # 成功案例2图片
+│   │   └── team-member.jpg # 团队成员头像
+│   └── icons/              # 图标（可选）
+├── index.html              # 首页
+├── guide.html              # 绿色生活指南
+├── calculator.html         # 碳中和计算器
+├── cases.html              # 成功案例
+└── about.html              # 关于我们
